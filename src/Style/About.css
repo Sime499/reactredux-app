@@ -1,0 +1,98 @@
+
+  @media query (
+min-device-width: 480px
+  ){
+
+body{
+  height: 100vh;
+}
+
+
+.ContactForm {
+
+
+
+  minHeight:50vh;
+  Width:60%;
+  display:block;
+  justify-content: center;
+  align-items: center;
+  margin:auto;
+  margin :5px;
+  margin: auto;
+  padding: inherit;
+
+
+
+}
+
+.name{
+    display: block;
+    width: 500px;
+
+}
+
+.email{
+  display: block;
+  width: 500px;
+
+
+}
+
+.text{
+  display: block;
+  width: 500px;
+  heigh:200px;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+
+}
+
+.send{
+  display: block;
+  width: 200px
+
+
+}
+
+
+
+
+.About
+{
+
+  background-color:#41B3A3;;
+  color: wHITE  BOLD;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 80px;
+  height:100vh;
+}
+
+.About >h1{
+
+  font-size: 100px;
+  display: grid;
+  padding: 20px 20px;
+  margin-left: 650px;
+  justify-content:center;
+
+
+}
+
+.About >h2{
+
+  font-size: 26px;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  margin-left: 800px;
+  margin-right: 100px;
+  color: ghostwhite;
+
+
+}
+
+}

@@ -1,47 +1,33 @@
-import { useEffect } from 'react'
-import  Post from './Post'
-import {connect} from 'react-redux'
-import * as actionCreator from '../Store/actionCreator'
 
 
-function App(props) {
+ import '../Style/Home.css';
+ import Carousel from 'react-bootstrap/Carousel'
+ import Post from './Post'
+ import Blog from './Blog'
+ import {ImageData} from './ImageData'
+ import "../Style/Home.css"
+ import "../Style/Blog.css"
 
-  //const [blogs,setBlogs]=useState([])
-
-  useEffect(()=>{
-
-        props.onBlogsLoaded()
-  },[])
 
 
-   const blogItems = props.blogs.map(blog => {
-      return <li key ={blog.id}>{blog.title} {blog.body}
-      <img src={blog.imageUrl} alt="logo" />
-      </li>
-   })
 
+
+
+
+
+function Home(props) {
   return (
+      <div ClassName="Blog-container">
+      {ImageData.map((Image,index) => {
+        return <img className="Slide"    src ={ImageData.image} alt="travel image"/>;
+      })}
+      <h1 ClassName= "Home" >Traveling Is the Ultimate drug.The More You Travels,the more addictive it becomes</h1>
 
-      <ul>
+      </div>
 
-      {blogItems}
 
-      </ul>
 
   );
 }
 
-const mapDispatchToProps = (dispatch) => {
-  return {
-    onBlogsLoaded:() => dispatch(actionCreator.fetchBlogs())
-
-  }
-}
-
-const mapStateToProps = (state) =>{
-  return{
-    blogs:state.blogs
-  }
-}
-
-export default connect(mapStateToProps, mapDispatchToProps)(App);
+export default Home;

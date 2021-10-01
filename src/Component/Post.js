@@ -1,6 +1,7 @@
 import {useState} from 'react'
 import { connect } from 'react-redux'
 import * as actionCreator from '../Store/actionCreator'
+import "../Style/Post.css"
 
 
 
@@ -37,10 +38,10 @@ function Post(props) {
    }
 
     return (
-        <div>
+        <div  Id= "InputContainer" >
           <form className="Post" >
         <h1>Share only The Fact </h1>
-         <div>
+         <div class="postimage">
           <input
             type="url"
             name="imageUrl"
@@ -50,7 +51,7 @@ function Post(props) {
           />
         </div>
 
-        <div>
+        <div className="title">
           <input
             type="text"
             name="title"
@@ -59,14 +60,17 @@ function Post(props) {
             onChange={handleBlogChange}
           />
         </div>
-        <div>
-          <input
+        <div className="BlogBody">
+          <input class
             type="text"
             name="body"
             required
             placeholder="Enter detail description of Your Article "
             onChange={handleBlogChange}
           />
+
+
+
         </div>
 
             <button onClick = {handleBlogPost}>Post</button>
