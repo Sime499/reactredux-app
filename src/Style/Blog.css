@@ -1,0 +1,56 @@
+
+@media query (
+min-device-width: 480px max-device-Width:1024px
+){
+
+
+
+*{
+  margin: 0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+   font-family :'roboto' sans-serif;
+   line-height:1.4;
+}
+
+
+.BlogContainer{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height:100%;
+  position: relative;
+  margin-left: 20px;
+  margin: auto;
+
+
+
+}
+.imageUrl{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height:50vh;
+
+}
+.BlogContainer h3 {
+   fontsize:4rem;
+
+}
+
+.BlogContainer p {
+   fontsize:1 rem;
+   height:50vh;
+   width: 300px;
+ }
+
+
+
+
+
+
+
+}

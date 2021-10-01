@@ -7,6 +7,8 @@ import { Provider } from 'react-redux'
 import reducer from './Store/reducer';
 import { createStore, applyMiddleware, compose } from 'redux'
 import thunk from 'redux-thunk'
+import 'bulma/css/bulma.min.css';
+
 
 
 
@@ -18,10 +20,9 @@ const store = createStore(reducer, composeEnhancer(applyMiddleware(thunk)))
 
 ReactDOM.render(
   <React.StrictMode>
-  <Provider store={store}>
-    <App />
-  </Provider>
-
+     <Provider store={store}>
+        <App />
+     </Provider>
   </React.StrictMode>,
 
   document.getElementById('root')
