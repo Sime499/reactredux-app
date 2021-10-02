@@ -1,5 +1,7 @@
 import {  Link } from "react-router-dom";
 import '../Style/Nav.css'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {faYoutube,faFacebook,faTwitter,faInstagram,faLinkedin} from "@fortawesome/free-brands-svg-icons";
 
 
 
@@ -15,10 +17,11 @@ function Nav() {
 
 
       <div className="top-right">
-      <i className="fab fa-twitter-square"></i>
-       <i className="fab fa-facebook-square"></i>
-       <i className="fab fa-instagram-square"></i>
-       <i className="fab fa-linkedin-in"></i>
+      <a href="https://www.youtube.com"  className="youtube"><FontAwesomeIcon icon={faYoutube} size="2x" /></a>
+      <a href="https://www.linkedin.com/in/sime-weldegebrile-70969b57?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BfjpEUPyRQnCjpG%2B3%2FLIiLA%3D%3D"  className="Linkedin social"><FontAwesomeIcon icon={faLinkedin} size="2x" /></a>
+      <a href="https://www.facebook.com"className="facebook"><FontAwesomeIcon icon={faFacebook} size="2x" /></a>
+      <a href="https://www.twitter.com" className="twitter"><FontAwesomeIcon icon={faTwitter} size="2x" /></a>
+      <a href="https://www.instagram.com"className="instagram "><FontAwesomeIcon icon={faInstagram} size="2x" /></a>
      </div>
 
       <nav className="Nav">
