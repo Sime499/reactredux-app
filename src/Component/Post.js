@@ -2,7 +2,7 @@ import {useState} from 'react'
 import { connect } from 'react-redux'
 import * as actionCreator from '../Store/actionCreator'
 import "../Style/Post.css"
-
+import "../Style/Nav.css"
 
 
 
@@ -25,7 +25,7 @@ function Post(props) {
     const handleBlogPost = () => {
 
       console.log (JSON.stringify(blog))
-       fetch('http://localhost:3080/blog/post',{
+       fetch('http://localhost:3080/blog',{
        method: 'POST',
             headers: {
                 'Content-Type': 'application/json'

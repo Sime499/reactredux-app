@@ -1,6 +1,7 @@
 
-
-import "../Style/About.css"
+import "../Style/Contact.css"
+import "../App.css"
+import "../Style/Nav.css"
 
 
 function Contact() {
@@ -8,7 +9,7 @@ function Contact() {
 
 
 
-    <div>
+    <div  ClassName="Contact">
     <form className="ContactForm" name="contact" method="post">
      <input type="hidden" name="form-name" value="contact" />
 
