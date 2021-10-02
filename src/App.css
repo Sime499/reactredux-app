@@ -1,4 +1,20 @@
-.App {
+
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1.6;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+}
+
+
+
+.Header {
   text-align: center;
 }
 
@@ -8,8 +24,10 @@
   justify-content: space-around;
   align-items: center;
   min-height:10vh;
-  background: #41B3A3;
-  color: white;
+  background: white;
+  color: black;
+  font-style: Josefin;
+  position: sticky;
 
 
 }
@@ -20,4 +38,41 @@
   justify-content: space-around;
   align-items: center;
   list-style: none;
+}
+
+.Footer{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height:15vh;
+  background: white;
+  color: black;
+  font-style: Josefin;
+  position: sticky;
+}
+
+.Footer h6{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-weight: bold;
+  color: Blue;
+
+
+}
+
+.Shop h1{
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-weight: bold;
+  color: Blue;
+  height: 100hv;
+
+}
+
+.Contact{
+  height: 100hv;
+  display: flex;
 }

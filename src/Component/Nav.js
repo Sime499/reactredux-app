@@ -1,5 +1,5 @@
-import react from 'react'
 import {  Link } from "react-router-dom";
+import '../Style/Nav.css'
 
 
 
@@ -7,11 +7,19 @@ import {  Link } from "react-router-dom";
 function Nav() {
 
     const navStyle={
-      color:'white'
+      color:'Black'
     }
 
   return (
-    <div className="App">
+    <div className="Header">
+
+
+      <div className="top-right">
+      <i className="fab fa-twitter-square"></i>
+       <i className="fab fa-facebook-square"></i>
+       <i className="fab fa-instagram-square"></i>
+       <i className="fab fa-linkedin-in"></i>
+     </div>
 
       <nav className="Nav">
 
@@ -21,11 +29,7 @@ function Nav() {
         <Link to="/contact" style={navStyle}><li>Contact</li></Link>
         <Link to="/shop" style={navStyle}><li>Shop</li></Link>
         <Link to="/about" style={navStyle}><li>About</li></Link>
-
-
        </ul>
-
-
       </nav>
 
     </div>

@@ -5,6 +5,9 @@ import "../Style/Post.css"
 
 
 
+
+
+
 function Post(props) {
 
 
@@ -22,7 +25,7 @@ function Post(props) {
     const handleBlogPost = () => {
 
       console.log (JSON.stringify(blog))
-       fetch('http://localhost:3080/blog',{
+       fetch('http://localhost:3080/blog/post',{
        method: 'POST',
             headers: {
                 'Content-Type': 'application/json'

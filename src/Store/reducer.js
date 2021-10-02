@@ -1,3 +1,4 @@
+
 const initialState ={
     blogs:[]
 }
@@ -12,7 +13,6 @@ const reducer = (state = initialState,action) => {
             default:
              return state
     }
-
 
 }
 

@@ -1,0 +1,54 @@
+@media (min-device-width: 480px
+){
+
+
+.Contact{
+  height: 100vh;
+  margin: 100px;
+
+}
+
+
+.ContactForm {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 100px 300px 100px 300px;
+    width: 500px;
+
+}
+
+.name{
+    width: 500px;
+    display: flex;
+    margin-bottom: 20px;
+    height:40px;
+
+}
+
+.email{
+  display: flex;
+  margin-bottom: 20px;
+  height:40px;
+  width: 500px;
+
+
+}
+
+.text{
+  display: flex;
+  margin-bottom: 20px;
+  height:100px;
+  width: 500px;
+
+
+
+
+}
+
+.send{
+  display: flex;
+
+}
+
+}

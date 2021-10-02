@@ -1,12 +1,11 @@
 
-import react from 'react'
 
 
 function Shop() {
   return (
-    <div>
+    <div className="Shop">
 
-      <h1>Shoppage</h1>
+      <h1>Under Construction...</h1>
 
     </div>
   );
