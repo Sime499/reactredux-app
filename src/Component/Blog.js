@@ -8,8 +8,7 @@ import '../Style/Blog.css';
 
 
 function Blog(props) {
-
-  //const [blogs,setBlogs]=useState([])
+  
 
   useEffect(()=>{
 
