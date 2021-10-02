@@ -1,3 +1,4 @@
+import '../Style/Blog.css';
 
 
 

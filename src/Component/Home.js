@@ -13,19 +13,12 @@ import {  Link } from "react-router-dom";
 
 
 
-
-
-
-
-
 function Home(props) {
   return (
       <div ClassName="Blog-container">
       {ImageData.map((image,index) => {
         return <a><img className="Slide" src ={image.image} alt="travel image"/></a>;
       })}
-      <h1 ClassName= "Home" >Traveling Is the Ultimate drug.The More You Travels,the more addictive it becomes</h1>
-
       </div>
 
 
