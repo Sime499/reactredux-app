@@ -1,0 +1,53 @@
+.Header
+{
+  width:100%;
+  font-family: 'josefin sans',sans-serif;
+  background-color: white ;
+  position: sticky;
+  display: flex;
+  align-items:flex-start;
+  justify-content: center;
+  top:0;
+  font-weight: 300;
+
+
+
+}
+
+.Nav{
+  flex:8;
+  display: flex;
+  style:none;
+  margin-right:20%;
+  font-size: 18px;
+  font-weight: 300;
+  cursor:pointer ;
+  justify-content: center;
+
+
+
+
+
+}
+
+.top-right{
+  flex:4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+
+}
+
+
+.top-right i{
+font-size:18px;
+margin-right:10px;
+cursor: pointer;
+margin-top: 30px;
+
+
+
+
+
+}
