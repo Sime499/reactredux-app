@@ -6,13 +6,13 @@
   margin: 0;
   padding:0;
   box-sizing:border-box;
+
 }
 
 body{
    font-family :'roboto' sans-serif;
    line-height:1.4;
    position: relative;
-   background-color: #41B3A3;
 
 }
 
@@ -20,18 +20,24 @@ body{
 .BlogContainer{
   margin: 10 25px 40px 25px;
   display: grid;
-  height:
+  height:500px;
 
 }
 .imageUrl{
-  width: 100%;
-  height:400px;
+  width: 500px;
+  height:500px;
   object-fit:cover;
   border-radius: 1.5%;
 
 
 }
 
+.city{
+  font-size: 16px;
+  font-weight: 400;
+  font-family :'roboto' sans-serif
+
+}
 .Blogbox{
 
   margin-top: 10px;
@@ -41,6 +47,11 @@ body{
 .BlogBox p {
    fontsize:1 rem;
    display: flex;
+   font-style: normal;
+   font-weight: 200;
+   width: 500px;
+   font-family :'roboto' sans-serif
+
 
 
 

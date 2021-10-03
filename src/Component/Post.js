@@ -3,6 +3,8 @@ import { connect } from 'react-redux'
 import * as actionCreator from '../Store/actionCreator'
 import "../Style/Post.css"
 import "../Style/Nav.css"
+import "../App.css"
+
 
 
 

@@ -8,7 +8,7 @@ import '../Style/Blog.css';
 
 
 function Blog(props) {
-  
+
 
   useEffect(()=>{
 
@@ -17,7 +17,7 @@ function Blog(props) {
 
 
    const blogItems = props.blogs.map(blog => {
-      return <li className ="BlogBox" key ={blog.id}><img href="imageUrl" className="imageUrl"src= {blog.imageUrl} alt="logo" /> <h3>{blog.title}</h3>
+      return <li className ="BlogBox" key ={blog.id}><img href="imageUrl" className="imageUrl"src= {blog.imageUrl} alt="logo" /> <h3 className="City">{blog.title}</h3>
       <p>{blog.body}</p>
 
       </li>

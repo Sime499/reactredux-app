@@ -1,78 +1,88 @@
 
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-body {
-  font-family: 'Poppins', sans-serif;
-  font-size: 15px;
-  font-weight: 500;
-  line-height: 1.6;
-  position: relative;
-  background-size: cover;
-  background-position: center;
-  height: 100%;
-  width: 100%;
+@media (min-device-width: 760px){
+
+
+
+
+.Container {
+  display: grid;
+  grid-template-columns: 1fr 6fr 1 ;
+  grid-template-rows: 1 6fr 1fr;
+  gap: 2px 2px;
+  grid-template-areas:
+    "logo header top-right"
+    " content content content "
+    "footer footer footer";
 }
 
 
 
-.Header {
-  text-align: center;
-}
 
-.Nav{
-
-  display: flex;
-  justify-content: space-around;
+.logo{
+  grid-area: logo;
+  font-size: 36px;
+  justify-content: center;
   align-items: center;
-  min-height:10vh;
-  background: white;
-  color: black;
-  font-style: Josefin;
+  font-weight: 800;
   position: sticky;
+  top:0;
+  padding: 10px;
+
 
 
 }
 
-.NavLink{
-  width: 50%;
-  display:flex;
-  justify-content: space-around;
-  align-items: center;
-  list-style: none;
-}
 
-.Footer{
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  min-height:15vh;
-  background: white;
-  color: black;
-  font-style: Josefin;
+.header{
+  grid-area:header;
   position: sticky;
-}
-
-.Footer h6{
-  display: flex;
-  justify-content: space-around;
+  font-family :'roboto' sans-serif;
+  font-size: 28px;
+  justify-content: center;
   align-items: center;
-  font-weight: bold;
-  color: Blue;
+  font-weight: 600;
 
 
 }
 
-.Shop h1{
-
-  display: flex;
-  justify-content: space-around;
+.right-top{
+  grid-area: right-top;
   align-items: center;
-  font-weight: bold;
-  color: Blue;
-  height: 100hv;
+  display: flex;
+  flex-direction: column;
+
 
 }
 
-.Contact{
-  height: 100hv;
+
+
+.content{
+  grid-area:content;
+  height: 100vh;
+
+}
+
+.footer{
+  grid-area: footer;
+  position:relative;
   display: flex;
+  bottom: 0;
+  justify-content: center;
+
+}
+
+.FooterPar{
+  font-family :'roboto' sans-serif;
+  font-size: 20px;
+  justify-content: center;
+  align-items: center;
+  font-weight: 400;
+}
+
 }
