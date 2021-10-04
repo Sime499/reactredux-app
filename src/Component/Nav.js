@@ -1,7 +1,7 @@
 import {  Link } from "react-router-dom";
 import '../Style/Nav.css'
-
-
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {faYoutube,faFacebook,faTwitter,faInstagram,faLinkedin} from "@fortawesome/free-brands-svg-icons";
 
 
 function Nav() {
@@ -11,28 +11,39 @@ function Nav() {
     }
 
   return (
-    <div className="Header">
 
 
-      <div className="top-right">
-      <i className="fab fa-twitter-square"></i>
-       <i className="fab fa-facebook-square"></i>
-       <i className="fab fa-instagram-square"></i>
-       <i className="fab fa-linkedin-in"></i>
+    <div className="Navigation">
+
+      <div className="Logo">AddisBlog</div>
+
+     <div>
+       <ul className="Link">
+        <li><Link  to = "/" style={navStyle}> <li>Home</li></Link></li>
+        <li><Link  to = "/blog" style={navStyle}> <li>Blog</li></Link></li>
+        <li><Link  to="/contact" style={navStyle}><li>Contact</li></Link></li>
+        <li><Link  to="/shop" style={navStyle}><li>Shop</li></Link></li>
+        <li><Link  to="/about" style={navStyle}><li>About</li></Link></li>
+       </ul>
+      </div>
+
+      <div className="SocialFeed" >
+                <a href="https://www.youtube.com"  className="youtube"><FontAwesomeIcon icon={faYoutube} size="2x" /></a>
+                <a href="https://www.linkedin.com/in/sime-weldegebrile-70969b57?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_
+                contact_details%3BfjpEUPyRQnCjpG%2B3%2FLIiLA%3D%3D"
+                className="Linkedin social"><FontAwesomeIcon icon={faLinkedin} size="2x" /></a>
+                <a href="https://www.facebook.com"className="facebook"><FontAwesomeIcon icon={faFacebook} size="2x" /></a>
+                <a href="https://www.twitter.com" className="twitter"><FontAwesomeIcon icon={faTwitter} size="2x" /></a>
+                <a href="https://www.instagram.com"className="instagram "><FontAwesomeIcon icon={faInstagram} size="2x" /></a>
+          </div>
+
+
+
      </div>
 
-      <nav className="Nav">
 
-       <ul className= "NavLink">
-       <Link to = "/" style={navStyle}> <li>Home</li></Link>
-        <Link to = "/blog" style={navStyle}> <li>Blog</li></Link>
-        <Link to="/contact" style={navStyle}><li>Contact</li></Link>
-        <Link to="/shop" style={navStyle}><li>Shop</li></Link>
-        <Link to="/about" style={navStyle}><li>About</li></Link>
-       </ul>
-      </nav>
 
-    </div>
+
   );
 }
 

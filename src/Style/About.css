@@ -1,52 +1,86 @@
+*{
 
-  @media (min-device-width: 480px
-  ){
-
-
-
-.About
-{
-  background-color:#41B3A3;;
-  display: flex;
-  flex-direction: row-reverse;
-  flex-wrap:nowrap;
+  margin: 0;
+  padding:0;
+  box-sizing: 0;
 
 }
 
-.AboutHeading{
-      display: flex;
-      flex-direction: column;
-      margin-top: 60px;
-      align-items:baseline;
-      position: absolute;
+@media only screen and (min-width: 768px)   {
+
+
+
+
+
+body{
+  font-family:'Roboto',sans-serif;
+  background-color:SNOW;
+
+
 }
 
-.AboutHeading-h2
-{ display: flex;
-  font-size: 26px;
+.About{
+  display: block;
+  flex-direction: column;
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align:2rem;
+  margin-top:1.5rem;
+  text-align: center;
+
+}
+
+.About >h1{
+  color:Black;
+  font-size: 4rem;
+  font-weight: 700;
+  letter-spacing: 6px;
+  margin-bottom: 1.5rem;
+  margin-top: -2rem;
+
+
+}
+.About >h2{
+  color:#white;
+  font-size: 2rem;
+  font-weight: 400;
   color: white;
-
-  align-items: center;
-
+  margin-top: -3rem;
 
 
 
 }
 
-.AboutHeading-h1{
-  display: flex;
-  font-size: 75px;
-align-items: center;
-
+.image{
+  margin-top: 1rem;
+  width: 40%;
+  height:400px;
+  margin-left: 300px;
 
 
 }
 
-.logo {
-  width:400px;
-  height: 100px;
-  background-color: white
+.About >p{
+  font-size: 1.5rem;
+  color: black;
+  margin-bottom: .8rem;
+  margin-top: -3rem;
+
+
 }
 
+.btn{
+  display:inline-block;
+  padding: .1rem .5rem;
+  background: #f66f6f;
+  font-size: 2rem;
+  text-decoration: none;
+  color:#fff;
+  border-radius: 1px;
+  margin-top: 0.5rem;
+
+
+
+}
 
 }

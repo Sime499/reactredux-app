@@ -1,78 +1,57 @@
 
-
-body {
-  font-family: 'Poppins', sans-serif;
-  font-size: 15px;
-  font-weight: 500;
-  line-height: 1.6;
-  position: relative;
-  background-size: cover;
-  background-position: center;
-  height: 100%;
-  width: 100%;
-}
-
-
-
-.Header {
-  text-align: center;
-}
-
-.Nav{
-
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  min-height:10vh;
-  background: white;
-  color: black;
-  font-style: Josefin;
-  position: sticky;
-
-
-}
-
-.NavLink{
-  width: 50%;
-  display:flex;
-  justify-content: space-around;
-  align-items: center;
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+  decoration:none;
   list-style: none;
 }
 
-.Footer{
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  min-height:15vh;
-  background: white;
-  color: black;
-  font-style: Josefin;
-  position: sticky;
+@media only screen and (min-width: 768px){
+body{
+  font-family:montserra;
 }
+.Navigation{
+  background-color:#white;
+  height:65px;
+  width:100%;
+  display:flex;
+  padding: 0 20px;
+  justify-content: space-between;
+  padding: 18px 10px;
 
-.Footer h6{
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  font-weight: bold;
-  color: Blue;
+  }
 
 
-}
-
-.Shop h1{
-
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  font-weight: bold;
-  color: Blue;
-  height: 100hv;
+.logo{
+   font-size: 35px;
+   line-height:80px;
+   padding:15px 0;
+   font-weight: 880;
+   font-weight:bold;
 
 }
-
-.Contact{
-  height: 100hv;
+.Link{
   display: flex;
+  justify-content: space-around;
+  flex-flow: row nowrap;
+}
+
+.Link li{
+  margin-right: 10px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 }

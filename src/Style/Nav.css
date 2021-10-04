@@ -1,53 +1,58 @@
-.Header
-{
-  width:100%;
-  font-family: 'josefin sans',sans-serif;
-  background-color: white ;
-  position: sticky;
-  display: flex;
-  align-items:flex-start;
-  justify-content: center;
-  top:0;
-  font-weight: 300;
 
+*{
 
+  margin: 0;
+  padding:0;
+  box-sizing: 0;
 
 }
 
-.Nav{
-  flex:8;
-  display: flex;
-  style:none;
-  margin-right:20%;
-  font-size: 18px;
-  font-weight: 300;
-  cursor:pointer ;
-  justify-content: center;
+@media only screen and (min-width: 768px)   {
 
 
 
 
 
+.youtube {
+  color: ##FF0000;
+  position: sticky;
+
+}
+
+.facebook {
+  color: #4968ad;
+  position: sticky;
+
+}
+
+.twitter {
+  color: #49a1eb;
+  position: sticky;
+
+}
+
+ .Linkedin {
+  color: #49a1eb;
+  position: sticky;
+}
+
+.instagram {
+  color: black;
+  position: sticky;
+
+}
+
+a.hover {
+  transform: translateY(-2px);
 }
 
 .top-right{
-  flex:4;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-
+  padding: 20px 20px;
 }
 
-
-.top-right i{
-font-size:18px;
-margin-right:10px;
-cursor: pointer;
-margin-top: 30px;
-
-
-
-
+.SocialFeed a {
+  transition: transform 250ms;
+  margin-right: 20px;
+}
 
 }

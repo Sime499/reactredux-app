@@ -1,14 +1,26 @@
 import react from 'react'
+import React, {useState, useEffect} from 'react';
+import '../App.css'
+import '../Style/Footer.css'
 
 
-function Shop() {
+
+
+export default function Footer() {
+
+    const [date , setDate] = useState();
+
+    const getYear = () =>  setDate(new Date().getFullYear())
+
+
+    useEffect(() => {
+        getYear();
+    }, [])
   return (
-    <div>
+    <div className="Footer">
+    <p className="FooterPar">Traveling Is the Ultimate drug.The More You Travels,the more addictive it becomes</p>
 
-      <h1>Traveling Is the Ultimate drug.The More You Travels,the more addictive it becomes</h1>
-
+     &copy; Sime - {date}
     </div>
   );
 }
-
-export default Shop;

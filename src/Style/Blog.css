@@ -1,49 +1,47 @@
 
-@media (min-device-width: 380px max-device-Width:1024px
+@media only screen and (min-width: 768px)
 ){
 
 *{
   margin: 0;
   padding:0;
   box-sizing:border-box;
+
 }
 
 body{
    font-family :'roboto' sans-serif;
    line-height:1.4;
    position: relative;
-   background-color: #41B3A3;
 
 }
 
 
-.BlogContainer{
-  margin: 10 25px 40px 25px;
-  display: grid;
-  height:
-
-}
 .imageUrl{
-  width: 100%;
-  height:400px;
-  object-fit:cover;
-  border-radius: 1.5%;
-
+  display: flex;
 
 }
 
+.city{
+  font-size: 16px;
+  font-weight: 400;
+  font-family :'roboto' sans-serif
+
+}
 .Blogbox{
 
   margin-top: 10px;
   display: flex;
+  column-count: 2;
 }
 
 .BlogBox p {
    fontsize:1 rem;
    display: flex;
-
-
-
+   font-style: normal;
+   font-weight: 200;
+   width: 500px;
+   font-family :'roboto' sans-serif
 
 
 

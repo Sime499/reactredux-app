@@ -2,6 +2,8 @@ import {useState} from 'react'
 import { connect } from 'react-redux'
 import * as actionCreator from '../Store/actionCreator'
 import "../Style/Post.css"
+import "../Style/Nav.css"
+import "../App.css"
 
 
 
@@ -25,7 +27,7 @@ function Post(props) {
     const handleBlogPost = () => {
 
       console.log (JSON.stringify(blog))
-       fetch('http://localhost:3080/blog/post',{
+       fetch('http://localhost:3080/blog',{
        method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -43,40 +45,29 @@ function Post(props) {
     return (
         <div  Id= "InputContainer" >
           <form className="Post" >
-        <h1>Share only The Fact </h1>
-         <div class="postimage">
-          <input
+           <h1>Share only The Fact </h1>
+           <input className="input-field"
             type="url"
             name="imageUrl"
             required
             placeholder="Share your Picture "
-            onChange={handleBlogChange}
-          />
-        </div>
+            onChange={handleBlogChange} />
 
-        <div className="title">
-          <input
+          <input className="input-field"
             type="text"
             name="title"
             required
             placeholder="Enter the title of your Article"
             onChange={handleBlogChange}
           />
-        </div>
-        <div className="BlogBody">
-          <input class
+          <input className="input-description"
             type="text"
             name="body"
             required
             placeholder="Enter detail description of Your Article "
             onChange={handleBlogChange}
           />
-
-
-
-        </div>
-
-            <button onClick = {handleBlogPost}>Post</button>
+  <button className= "BtnPost" onClick = {handleBlogPost}>Post</button>
       </form>
 
         </div>
