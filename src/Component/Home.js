@@ -20,18 +20,26 @@ import { useEffect } from 'react'
 
 
    const blogItems = props.blogs.map(blog => {
-      return <li className ="BlogBox" key ={blog.id}><img href="imageUrl" className="imageUrl"src= {blog.imageUrl} alt="logo" /> <h3>{blog.title}</h3>
+      return(
 
-      </li>
+          <div className ="BlogBox" key ={blog.id}>
+
+              <img href="imageUrl" className="imageUrl"src= {blog.imageUrl} alt="logo" />
+               <h3 style={{textAligment:'center'}}>{blog.title}</h3>
+
+            </div>)
+
+
+
    })
 
   return (
 
-      <ul BlogContainer>
+      <div className="BlogContainer">
 
       {blogItems}
 
-      </ul>
+      </div>
 
   );
 }

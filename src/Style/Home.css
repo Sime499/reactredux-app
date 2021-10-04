@@ -1,21 +1,20 @@
-@media (min-device-width: 380px){
+@media only screen and (min-width: 768px) and (max-width: 1024px)  {
 
 body{
 
   height: 100vh;
 }
 
+.BlogContainer{
+        column-count: 3;
+        padding: 0 12px;
 
-.Slide{
-  width: 100%;
-  height: 550px;
 }
 
-.Home{
-      text-transform: none;
-      line-height: 1.1;
-      letter-spacing: 0em;
-      font-style: normal;
+.BlogBox{
+  display: flex;
+  column-count: 3;
+  padding: 0 12px;
 
 }
 

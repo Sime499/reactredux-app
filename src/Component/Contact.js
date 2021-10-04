@@ -8,7 +8,7 @@ function Contact() {
   return (
 
 
-    <div  ClassName="Contact-Box">
+  <div  ClassName="Contact-Box">
     <form className="Form" name="contact" method="post">
           <input type="hidden" name="form-name" value="contact" />
           <input className="input-field" type="text" placeholder="Name" name="name"/>
@@ -17,7 +17,7 @@ function Contact() {
           <button className="send"type="submit">Send</button>
    </form>
 
-    </div>
+  </div>
   );
 }
 

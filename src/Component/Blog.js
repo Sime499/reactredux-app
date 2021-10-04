@@ -25,7 +25,7 @@ function Blog(props) {
 
   return (
 
-      <ul BlogContainer>
+      <ul className="BlogContainer">
 
       {blogItems}
 

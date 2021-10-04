@@ -1,5 +1,5 @@
 
-@media (min-device-width: 380px max-device-Width:1024px
+@media only screen and (min-width: 768px)
 ){
 
 *{
@@ -17,18 +17,8 @@ body{
 }
 
 
-.BlogContainer{
-  margin: 10 25px 40px 25px;
-  display: grid;
-  height:500px;
-
-}
 .imageUrl{
-  width: 500px;
-  height:500px;
-  object-fit:cover;
-  border-radius: 1.5%;
-
+  display: flex;
 
 }
 
@@ -42,6 +32,7 @@ body{
 
   margin-top: 10px;
   display: flex;
+  column-count: 2;
 }
 
 .BlogBox p {
@@ -51,10 +42,6 @@ body{
    font-weight: 200;
    width: 500px;
    font-family :'roboto' sans-serif
-
-
-
-
 
 
 

@@ -1,5 +1,13 @@
-@media (min-device-width: 380px
-){
+*{
+
+  margin: 0;
+  padding:0;
+  box-sizing: 0;
+
+}
+
+@media only screen and (min-width: 768px)  {
+
 
 *{
   margin: 0;
